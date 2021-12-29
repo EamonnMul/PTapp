@@ -1,0 +1,11 @@
+.macrocontainer, .bmrForm , .Results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.macrocontainer {
+    background-color: rgb(112, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
