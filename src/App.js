@@ -10,6 +10,7 @@ import {
 
 import LandingPage from './Pages/LandingPage';
 import Macrocalculator from './Components/Macrocalculator';
+import WorkoutPlan from './Pages/WorkoutPlan';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <Routes>
       <Route path="/" element={<LandingPage/>}/>
       <Route path="/macrocalculator" element={<Macrocalculator/>}/>
+      <Route path="/workoutplan" element={<WorkoutPlan/>}/>
 
     </Routes>
   );

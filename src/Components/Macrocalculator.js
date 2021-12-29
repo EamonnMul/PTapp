@@ -135,18 +135,30 @@ function Macrocalculator() {
     
     return (
         <div className='macrocontainer'>
-            <Navbar/>
+         
           
 
             <h1>Macro calculator</h1>
             <div className='inputDetails'>
                 <form action="" onSubmit={handleSubmit} className='bmrForm'>
+                    <div className="weightInput">
                     <label>Please enter weight</label>
                     <input type="integer" onChange={handleWeightInput} />
+                    <select >
+                     <option>KG</option>
+                     <option>LBS</option>
+                  </select>
+                  </div>
                     <label htmlFor="">Please enter your age in years</label>
                     <input type="integer" onChange={handleAgeInput} />
-                    <label htmlFor="">Please enter your heaight in cm</label>
+                    <div className="height">
+                    <label htmlFor="">Please enter your height </label>
+                    <select >
+                        <option>Feet</option>
+                        <option>cm</option>
+                     </select>
                     <input type="integer" onChange={handleHeightInput} />
+                    </div>
                     <label htmlFor="">What is your sex?</label>
                     <select  onChange={(e)=>{setSex(e.target.value);}}>
                         <option >Female</option>
