@@ -1,0 +1,9 @@
+.formy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formy div{
+    padding: 1em;
+}

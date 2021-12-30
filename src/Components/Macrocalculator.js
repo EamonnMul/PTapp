@@ -142,15 +142,19 @@ function Macrocalculator() {
             <div className='inputDetails'>
                 <form action="" onSubmit={handleSubmit} className='bmrForm'>
                     <div className="weightInput">
-                    <label>Please enter weight</label>
-                    <input type="integer" onChange={handleWeightInput} />
-                    <select >
-                     <option>KG</option>
-                     <option>LBS</option>
-                  </select>
+                        <label>Please enter weight</label>
+                        <input type="integer" onChange={handleWeightInput} />
+                        <select >
+                            <option>KG</option>
+                            <option>LBS</option>
+                        </select>
                   </div>
-                    <label htmlFor="">Please enter your age in years</label>
-                    <input type="integer" onChange={handleAgeInput} />
+                  <div className="">
+                      <label htmlFor="">Please enter your age in years</label>
+                      <input type="integer" onChange={handleAgeInput} />
+
+                  </div>
+                    
                     <div className="height">
                     <label htmlFor="">Please enter your height </label>
                     <select >
@@ -159,25 +163,32 @@ function Macrocalculator() {
                      </select>
                     <input type="integer" onChange={handleHeightInput} />
                     </div>
+                    <div className="">
                     <label htmlFor="">What is your sex?</label>
                     <select  onChange={(e)=>{setSex(e.target.value);}}>
                         <option >Female</option>
                         <option >Male</option>
                     </select>
+                    </div>
+                    <div className="">
                     <label >What is your current activity level?</label>
                     <select  onChange={(e)=> {setActivity(e.target.value)}}>
                         <option >Sedentary</option>
                         <option >Active</option>
                         <option >Very Active</option>
                     </select>
-                    
+                    </div>
+                    <div className="">
                     <label>What is your goal:</label>
                     <select id="diet" name="diet" onChange={handleGoal}>
                         <option >Lose Weight</option>
                         <option >Maintain</option>
                         <option >Gain Weight</option>
                     </select>
-                    <input type="submit" value="Submit"></input>
+                    </div>
+                           
+                    <input type="submit" value="Submit"></input>  
+         
                 </form>
             </div>
             <div className="Results">
